@@ -277,6 +277,12 @@
     <string name="remove_all_views_from_home_screen">Clear home screen</string>
     <string name="remove_all_views_from_home_screen_desc">Home screen will be cleared. Do you want to continue?</string>
 
+    <!-- Batch add apps to home screen -->
+    <string name="batch_add_apps_title">Add apps to home screen</string>
+    <string name="batch_add_apps_description">Select apps to add to the home screen</string>
+    <string name="batch_add_apps_execute">Add to home screen</string>
+    <string name="batch_add_apps_toast">Added %1$d apps to home screen</string>
+
     <!-- Icon picker -->
     <string name="icon_picker_default_category">Icons</string>
     <string name="icon_picker_reset_to_default">Reset to default</string>

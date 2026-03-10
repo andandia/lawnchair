@@ -22,6 +22,7 @@ import app.lawnchair.ui.preferences.components.colorpreference.ColorPreferenceMo
 import app.lawnchair.ui.preferences.components.colorpreference.ColorSelection
 import app.lawnchair.ui.preferences.components.search.SearchProviderPreferenceScreen
 import app.lawnchair.ui.preferences.destinations.AppDrawerFoldersPreference
+import app.lawnchair.ui.preferences.destinations.BatchAddAppsPreference
 import app.lawnchair.ui.preferences.destinations.AppDrawerPreferences
 import app.lawnchair.ui.preferences.destinations.CustomIconShapePreference
 import app.lawnchair.ui.preferences.destinations.DebugMenuPreferences
@@ -107,6 +108,9 @@ fun PreferenceNavigation(
         composable<HomeScreen> { HomeScreenPreferences() }
         composable<HomeScreenGrid> { HomeScreenGridPreferences() }
         composable<HomeScreenPopupEditor> { LauncherPopupPreference() }
+        // START CUSTOM: ホーム画面にアプリを一括追加する画面
+        composable<BatchAddApps> { BatchAddAppsPreference() }
+        // END CUSTOM
 
         composable<Dock> { DockPreferences() }
         composable<DockSearchProvider> { SearchProviderPreferences() }

@@ -226,6 +226,13 @@
     <string name="reset_custom_icons_confirmation">すべてのカスタムアイコンがリセットされます。続行しますか？</string>
     <string name="remove_all_views_from_home_screen">ホーム画面をクリアする</string>
     <string name="remove_all_views_from_home_screen_desc">ホーム画面をクリアします。よろしいですか？</string>
+
+    <!-- ホーム画面にアプリを一括追加 -->
+    <string name="batch_add_apps_title">ホーム画面にアプリを一括追加</string>
+    <string name="batch_add_apps_description">ホーム画面に追加するアプリを選択してください</string>
+    <string name="batch_add_apps_execute">ホーム画面に追加</string>
+    <string name="batch_add_apps_toast">%1$d個のアプリをホーム画面に追加しました</string>
+
     <!-- Icon picker -->
     <string name="icon_picker_default_category">アイコン</string>
     <string name="icon_picker_reset_to_default">デフォルトにリセット</string>

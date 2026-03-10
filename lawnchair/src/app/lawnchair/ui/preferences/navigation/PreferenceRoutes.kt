@@ -91,6 +91,11 @@ data object HomeScreenGrid : PreferenceRoute
 @Serializable
 data object HomeScreenPopupEditor : PreferenceRoute
 
+// START CUSTOM: ホーム画面にアプリを一括追加するためのルート
+@Serializable
+data object BatchAddApps : PreferenceRoute
+// END CUSTOM
+
 // Dock section routes
 @Serializable
 data object DockSearchProvider : PreferenceRoute

@@ -43,6 +43,7 @@ import app.lawnchair.ui.preferences.components.controls.SwitchPreference
 import app.lawnchair.ui.preferences.components.layout.ExpandAndShrink
 import app.lawnchair.ui.preferences.components.layout.PreferenceGroup
 import app.lawnchair.ui.preferences.components.layout.PreferenceLayout
+import app.lawnchair.ui.preferences.navigation.BatchAddApps
 import app.lawnchair.ui.preferences.navigation.HomeScreenGrid
 import app.lawnchair.util.collectAsStateBlocking
 import com.android.launcher3.LauncherAppState
@@ -107,6 +108,13 @@ fun HomeScreenPreferences(
                     }
                 },
             )
+            // START CUSTOM: ホーム画面にアプリを一括追加するメニュー
+            NavigationActionPreference(
+                label = stringResource(id = R.string.batch_add_apps_title),
+                subtitle = stringResource(id = R.string.batch_add_apps_description),
+                destination = BatchAddApps,
+            )
+            // END CUSTOM
         }
         PreferenceGroup(heading = stringResource(id = R.string.minus_one)) {
             val feedAvailable = OverlayCallbackImpl.minusOneAvailable(LocalContext.current)
